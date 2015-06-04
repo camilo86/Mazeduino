@@ -24,6 +24,13 @@ void driveForward() {
   rightDrive.setSpeed(255);
 }
 
+void driveBackward() {
+  leftDrive.run(BACKWARD);
+  rightDrive.run(BACKWARD);
+  leftDrive.setSpeed(255);
+  rightDrive.setSpeed(255);
+}
+
 void driveStop() {
   leftDrive.run(RELEASE);
   rightDrive.run(RELEASE);
