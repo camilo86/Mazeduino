@@ -1,7 +1,7 @@
-long duration, distance;
+long duration, distance, averageDistance;
 
 // Return distance in CMs
-long getSonar() {
+long getRawSonar() {
   digitalWrite(sonarTrig, LOW);
   delayMicroseconds(2);
   digitalWrite(sonarTrig, HIGH);
